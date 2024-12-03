@@ -1,4 +1,4 @@
-import Card from "./Componenet/Card"
+
 import List from "./Componenet/List"
 
 function App() {
