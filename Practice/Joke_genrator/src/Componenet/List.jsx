@@ -33,6 +33,13 @@ function List() {
             )
         );
     }
+    function allUpdate(){
+        setJoke((prevJoke)=>
+            prevJoke.map((joke1)=>(
+            {...joke1,setup :"Abhishek",punchline :"Abhishek"}
+            )
+        ))
+    }
 
     return (
         <>
@@ -47,6 +54,7 @@ function List() {
                     updateJoke={updateJoke} // Pass the update function
                 />
             ))}
+            <button onClick={allUpdate}>Update All</button>
         </>
     );
 }
